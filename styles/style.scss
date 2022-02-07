@@ -59,12 +59,88 @@ main {
     img {
       border-radius: 50%;
       width: 20vw;
-      height: 20vw;
+      height: 27vw;
       position: absolute;
       top: 55vh;
       right: 25vw;
       transform: translateY(-50%);
     }
+  }
+
+  section.table {
+    flex: 3 1 500px;
+    padding: 2rem;
+    table {
+      border-collapse: collapse; /*底線*/
+      tr {
+        border-bottom: 2px solid gray; /*底線*/
+        transition: all 0.2 ease;
+        td {
+          padding: 1rem;
+        }
+        &:hover {
+          background-color: #ffd2b8;
+        }
+      }
+    }
+  }
+  section.picture {
+    flex: 1 1 600px;
+    position: relative;
+    img {
+      width: 30vw;
+    }
+    div.orangeRect {
+      width: 30vw;
+      height: 90vh;
+      background-color: #e08958;
+      position: absolute;
+      top: 30px;
+      left: 80px;
+      z-index: -1;
+    }
+  }
+  section.form {
+    flex: 1 1 600px;
+    form {
+      min-height: 70vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      div {
+        margin: 0.5rem;
+        label {
+          font-size: 1.5rem;
+          margin-right: 1rem;
+        }
+        input,
+        textarea {
+          background-color: #f5ab81;
+          color: white;
+          font-size: 1.25rem;
+          padding: 0.5rem 0.25rem;
+          border: none;
+          width: 80%;
+        }
+        textarea {
+          vertical-align: top; /*需求字 移上去*/
+        }
+      }
+      button {
+        align-self: center;
+        background-color: #e08958;
+        color: white;
+        border: none;
+        cursor: pointer;
+        padding: 0.75rem 1.5rem;
+        font-size: 2rem;
+        border-radius: 10px;
+      }
+    }
+  }
+  section.contact {
+    flex: 1 1 500px;
   }
 }
 
@@ -107,6 +183,17 @@ footer {
         transform: none;
         width: 50vw;
         height: 50vw;
+      }
+    }
+    section.picture {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 60vw;
+      }
+      div.orangeRect {
+        display: none;
       }
     }
   }
