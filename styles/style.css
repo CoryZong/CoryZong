@@ -83,13 +83,13 @@ main section.right {
 
 main section.right img {
   border-radius: 50%;
-  width: 20vw;
-  height: 27vw;
+  width: 22vw;
+  height: 29vw;
   position: absolute;
   top: 55vh;
   right: 25vw;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -webkit-transform: translateY(-55%);
+          transform: translateY(-55%);
 }
 
 main section.table {
@@ -164,6 +164,7 @@ main section.form form {
 
 main section.form form div {
   margin: 0.5rem;
+  width: 80%;
 }
 
 main section.form form div label {
@@ -178,7 +179,6 @@ main section.form form div textarea {
   font-size: 1.25rem;
   padding: 0.5rem 0.25rem;
   border: none;
-  width: 80%;
 }
 
 main section.form form div textarea {

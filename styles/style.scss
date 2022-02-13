@@ -62,12 +62,12 @@ main {
     position: relative;
     img {
       border-radius: 50%;
-      width: 20vw;
-      height: 27vw;
+      width: 22vw;
+      height: 29vw;
       position: absolute;
       top: 55vh;
       right: 25vw;
-      transform: translateY(-50%);
+      transform: translateY(-55%);
     }
   }
 
@@ -114,6 +114,7 @@ main {
       align-items: center;
       div {
         margin: 0.5rem;
+        width: 80%;
         label {
           font-size: 1.5rem;
           margin-right: 1rem;
@@ -125,12 +126,12 @@ main {
           font-size: 1.25rem;
           padding: 0.5rem 0.25rem;
           border: none;
-          width: 80%;
         }
         textarea {
           vertical-align: top; /*需求字 移上去*/
         }
       }
+
       button {
         align-self: center;
         background-color: #e08958;
