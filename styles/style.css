@@ -170,6 +170,7 @@ main section.form form div label {
 
 main section.form form div input,
 main section.form form div textarea {
+  width: 80%;
   background-color: #f5ab81;
   color: white;
   font-size: 1.25rem;
