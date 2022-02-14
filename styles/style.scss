@@ -166,7 +166,7 @@ footer {
 @media screen and (max-width: 1100px) {
   /*section.left&right 500px + 600px = 1100px*/
   .orange {
-    opacity: 0.5; /*透明度*/
+    display: none;
   }
 
   header {
@@ -191,7 +191,7 @@ footer {
         position: static;
         transform: none;
         width: 50vw;
-        height: 50vw;
+        height: 68vw;
       }
     }
     section.picture {
@@ -203,6 +203,11 @@ footer {
       }
       div.orangeRect {
         display: none;
+      }
+    }
+    section.contact {
+      div.contact {
+        margin-top: 3.5rem;
       }
     }
   }
