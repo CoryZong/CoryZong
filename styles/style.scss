@@ -24,15 +24,12 @@ header {
     background-color: #ffd2b8;
     ul {
       padding: 2rem;
-      width: 70%;
+      width: 90%;
       display: flex;
       list-style-type: none;
       justify-content: space-around;
       li {
         font-size: 1.75rem;
-        &:hover {
-          background-color: #ffd2b8;
-        }
         a {
           color: black;
           text-decoration: none;

@@ -27,7 +27,7 @@ header nav {
 
 header nav ul {
   padding: 2rem;
-  width: 70%;
+  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,10 +38,6 @@ header nav ul {
 
 header nav ul li {
   font-size: 1.75rem;
-}
-
-header nav ul li:hover {
-  background-color: #ffd2b8;
 }
 
 header nav ul li a {
