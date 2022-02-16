@@ -12,9 +12,15 @@ add.addEventListener("click", (e) => {
     let todoMonth = form.children[1].value; //待辦事項月份
     let todoDate = form.children[2].value;  //待辦事項日期
 
-    //待辦事項文字未輸入時跳出通知
-    if (todoText === "") { 
-        alert("Please Enter some Text.");
+    //待辦事項未輸入完全時跳出通知
+    if (todoText == "" || todoMonth =="" || todoDate =="") { 
+        alert("請輸入待辦事項內容及執行日期！");
+        return;
+    }
+
+    //日期輸入限制
+    if(todoMonth > 12 || todoDate > 31 ){
+        alert("請輸入適當的執行日期！")
         return;
     }
 
