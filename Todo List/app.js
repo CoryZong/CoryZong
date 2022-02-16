@@ -8,12 +8,12 @@ add.addEventListener("click", (e) => {
     e.preventDefault(); //防止Button Element丟出導致程式出問題
 
     let form = e.target.parentElement;  //get form Element
-    let todoText = form.children[0].value;  //待辦事項文字
+    let todoText = form.children[0].value.trim();  //待辦事項文字
     let todoMonth = form.children[1].value; //待辦事項月份
     let todoDate = form.children[2].value;  //待辦事項日期
 
     //待辦事項未輸入完全時跳出通知
-    if (todoText == "" || todoMonth =="" || todoDate =="") { 
+    if (todoText == "" || todoMonth =="" || todoDate =="" || todoText.trim() == "") { 
         alert("請輸入待辦事項內容及執行日期！");
         return;
     }
