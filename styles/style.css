@@ -230,7 +230,8 @@ main section.contact div.contact h2 {
   border-bottom: 2px solid;
 }
 
-footer.index, footer.resume {
+footer.index,
+footer.resume {
   opacity: 0.6;
   position: fixed;
   bottom: 0;
@@ -238,7 +239,8 @@ footer.index, footer.resume {
           transform: scale(0.8);
 }
 
-footer.index a, footer.resume a {
+footer.index a,
+footer.resume a {
   padding: 1rem;
 }
 
@@ -346,7 +348,9 @@ footer.contact a {
   main section.contact div.contact h2 {
     border-bottom: 2px solid;
   }
-  footer {
+  footer.index,
+  footer.resume,
+  footer.contact {
     opacity: 1;
     position: static;
     -webkit-transform: scale(0.75);
@@ -358,7 +362,9 @@ footer.contact a {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  footer a {
+  footer.index a,
+  footer.resume a,
+  footer.contact a {
     padding: 0rem;
   }
   .active {

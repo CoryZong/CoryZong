@@ -167,7 +167,8 @@ main {
   }
 }
 
-footer.index,footer.resume {
+footer.index,
+footer.resume {
   opacity: 0.6;
   position: fixed;
   bottom: 0;
@@ -269,7 +270,10 @@ footer.contact{
       }
     }
   }
-  footer{
+
+  footer.index,
+  footer.resume,
+  footer.contact{
     opacity: 1;
     position: static;
     transform: scale(0.75);
