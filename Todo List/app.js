@@ -19,7 +19,7 @@ add.addEventListener("click", (e) => {
     }
 
     //日期輸入限制
-    if(todoMonth > 12 || todoDate > 31 ){
+    if(todoMonth > 12 || todoDate > 31 || todoMonth + todoDate == 0 ){
         alert("請輸入適當的執行日期！")
         return;
     }
