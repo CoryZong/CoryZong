@@ -13,7 +13,7 @@ add.addEventListener("click", (e) => {
     let todoDate = form.children[2].value;  //待辦事項日期
 
     //待辦事項未輸入完全時跳出通知
-    if (todoText == "" || todoMonth =="" || todoDate =="" || todoText.trim() == "") { 
+    if (todoText == "" || todoMonth == "" || todoDate == "" || todoText.trim() == "") { 
         alert("請輸入待辦事項內容及執行日期！");
         return;
     }
