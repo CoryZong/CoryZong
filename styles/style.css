@@ -13,8 +13,8 @@ body {
 
 .orange {
   position: absolute;
-  top: -10vh;
-  right: 0;
+  top: -15vh;
+  right: -5vw;
   z-index: -1;
   width: 55vw;
   height: 150vh;
@@ -45,6 +45,11 @@ header nav ul li a {
   text-decoration: none;
 }
 
+header nav ul li :hover {
+  color: #e08958;
+  border-bottom: 3px solid #e08958;
+}
+
 main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -54,10 +59,8 @@ main {
 }
 
 main section.left {
-  -webkit-box-flex: 3;
-      -ms-flex: 3 1 500px;
-          flex: 3 1 500px;
-  padding: 2rem;
+  width: 50%;
+  padding: 3rem;
 }
 
 main section.left h1 {
@@ -80,10 +83,10 @@ main section.right {
 main section.right img {
   border-radius: 50%;
   width: 22vw;
-  height: 29vw;
+  height: 26vw;
   position: absolute;
-  top: 55vh;
-  right: 25vw;
+  top: 50vh;
+  right: 20vw;
   -webkit-transform: translateY(-55%);
           transform: translateY(-55%);
 }
@@ -120,6 +123,7 @@ main section.picture {
       -ms-flex: 1 1 600px;
           flex: 1 1 600px;
   position: relative;
+  margin-top: 20px;
 }
 
 main section.picture img {
@@ -131,8 +135,8 @@ main section.picture div.orangeRect {
   height: 90vh;
   background-color: #e08958;
   position: absolute;
-  top: 30px;
-  left: 80px;
+  top: 25px;
+  left: 85px;
   z-index: -1;
 }
 
@@ -156,6 +160,7 @@ main section.form form {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 20px;
 }
 
 main section.form form div {
@@ -203,7 +208,8 @@ main section.contact {
 }
 
 main section.contact div.contact {
-  height: 50%;
+  height: 60%;
+  width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -215,12 +221,43 @@ main section.contact div.contact {
       justify-content: space-around;
 }
 
-footer a {
+main section.contact div.contact h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+main section.contact div.contact h2 {
+  border-bottom: 2px solid;
+}
+
+footer.index, footer.resume {
+  opacity: 0.6;
+  position: fixed;
+  bottom: 0;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+footer.index a, footer.resume a {
+  padding: 1rem;
+}
+
+footer.contact {
+  opacity: 0.6;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+footer.contact a {
   padding: 1rem;
 }
 
 .active {
   color: #e08958;
+  border-bottom: 3px solid #e08958;
 }
 
 @media screen and (max-width: 1100px) {
@@ -240,6 +277,9 @@ footer a {
     padding: 1rem 0rem;
     border-bottom: 2px solid gray;
   }
+  main section.left {
+    width: 100%;
+  }
   main section.right {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -257,7 +297,7 @@ footer a {
     -webkit-transform: none;
             transform: none;
     width: 50vw;
-    height: 68vw;
+    height: 62vw;
   }
   main section.picture {
     display: -webkit-box;
@@ -276,8 +316,75 @@ footer a {
   main section.picture div.orangeRect {
     display: none;
   }
+  main section.form form div {
+    width: 90%;
+  }
+  main section.form form div label {
+    text-align: center;
+  }
+  main section.form form button {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
   main section.contact div.contact {
-    margin-top: 3.5rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-top: 5rem;
+  }
+  main section.contact div.contact h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  main section.contact div.contact h2 {
+    border-bottom: 2px solid;
+  }
+  footer {
+    opacity: 1;
+    position: static;
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer a {
+    padding: 0rem;
+  }
+  .active {
+    border: none;
+  }
+}
+
+@-webkit-keyframes scaleUp {
+  form {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes scaleUp {
+  form {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 /*# sourceMappingURL=style.css.map */
