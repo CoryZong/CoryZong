@@ -78,7 +78,7 @@ main {
     table {
       border-collapse: collapse; /*底線*/
       tr {
-        border-bottom: 2px solid gray; /*底線*/
+        //border-bottom: 2px solid gray; /*底線*/
         transition: all 0.2 ease;
         td {
           padding: 1rem;
@@ -194,6 +194,11 @@ footer.contact{
   border-bottom: 3px solid #e08958;
 }
 
+#font{
+  font-size: 1.5rem;
+  text-align: center;
+}
+
 @media screen and (max-width: 1100px) {
   /*section.left&right 500px + 600px = 1100px*/
   .orange {
@@ -284,7 +289,7 @@ footer.contact{
     }
   }
   .active{
-    border: none;
+    border-bottom: none;
   }
 }
 
