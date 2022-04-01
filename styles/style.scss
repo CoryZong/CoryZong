@@ -1,298 +1,296 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Noto Sans TC", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans TC", sans-serif;
 }
 
 body {
-  position: relative;
+    position: relative;
 }
 
 .orange {
-  position: absolute;
-  top: -15vh;
-  right: -5vw;
-  z-index: -1;
-  width: 55vw;
-  height: 150vh;
+    position: absolute;
+    top: -15vh;
+    right: -5vw;
+    z-index: -1;
+    width: 55vw;
+    height: 150vh;
 }
 
 header {
-  nav {
-    width: 100%;
-    background-color: #ffd2b8;
-    ul {
-      padding: 2rem;
-      width: 90%;
-      display: flex;
-      list-style-type: none;
-      justify-content: space-around;
-      li {
-        font-size: 1.75rem;
-        a {
-          color: black;
-          text-decoration: none;
+    nav {
+        width: 100%;
+        background-color: #ffd2b8;
+        ul {
+            padding: 2rem;
+            width: 90%;
+            display: flex;
+            list-style-type: none;
+            justify-content: space-around;
+            li {
+                font-size: 1.75rem;
+                a {
+                    color: black;
+                    text-decoration: none;
+                }
+                & :hover {
+                    color: #e08958;
+                    border-bottom: 3px solid #e08958;
+                }
+            }
         }
-        & :hover{
-          color: #e08958;
-          border-bottom: 3px solid #e08958;
-        }
-      }
     }
-  }
 }
 
 main {
-  display: flex;
-  flex-wrap: wrap;
-  section.left {
-    width: 50%;
-    padding: 3rem;
-    h1 {
-      font-size: 4rem;
-      color: #e08958;
+    display: flex;
+    flex-wrap: wrap;
+    section.left {
+        width: 50%;
+        padding: 3rem;
+        h1 {
+            font-size: 4rem;
+            color: #e08958;
+        }
+        p {
+            font-size: 1.5rem;
+            padding: 1rem 1rem;
+        }
     }
-    p {
-      font-size: 1.5rem;
-      padding: 1rem 1rem;
+    section.right {
+        flex: 1 1 600px;
+        position: relative;
+        img {
+            border-radius: 50%;
+            width: 22vw;
+            height: 26vw;
+            position: absolute;
+            top: 50vh;
+            right: 20vw;
+            transform: translateY(-55%);
+        }
     }
-  }
-  section.right {
-    flex: 1 1 600px;
-    position: relative;
-    img {
-      border-radius: 50%;
-      width: 22vw;
-      height: 26vw;
-      position: absolute;
-      top: 50vh;
-      right: 20vw;
-      transform: translateY(-55%);
-    }
-  }
 
-  section.table {
-    flex: 3 1 500px;
-    padding: 2rem;
-    table {
-      border-collapse: collapse; /*底線*/
-      tr {
-        border-bottom: 2px solid gray; /*底線*/
-        transition: all 0.2 ease;
-        td {
-          padding: 1rem;
+    section.table {
+        flex: 3 1 500px;
+        padding: 2rem;
+        table {
+            border-collapse: collapse; /*底線*/
+            tr {
+                border-bottom: 2px solid gray; /*底線*/
+                transition: all 0.2 ease;
+                td {
+                    padding: 1rem;
+                }
+                &:hover {
+                    background-color: #ffd2b8;
+                }
+            }
         }
-        &:hover {
-          background-color: #ffd2b8;
-        }
-      }
     }
-  }
-  section.picture {
-    flex: 1 1 600px;
-    position: relative;
-    margin-top: 20px;
-    img {
-      width: 30vw;
+    section.picture {
+        flex: 1 1 600px;
+        position: relative;
+        margin-top: 20px;
+        img {
+            width: 30vw;
+        }
+        div.orangeRect {
+            width: 30vw;
+            height: 90vh;
+            background-color: #e08958;
+            position: absolute;
+            top: 25px;
+            left: 85px;
+            z-index: -1;
+        }
     }
-    div.orangeRect {
-      width: 30vw;
-      height: 90vh;
-      background-color: #e08958;
-      position: absolute;
-      top: 25px;
-      left: 85px;
-      z-index: -1;
-    }
-  }
-  section.form {
-    flex: 1 1 600px;
-    form {
-      min-height: 70vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-      margin-top: 20px;
-      div {
-        margin: 0.5rem;
-        width: 80%;
-        label {
-          font-size: 1.5rem;
-          margin-right: 1rem;
-        }
-        input,
-        textarea {
-          width: 80%;
-          background-color: #f5ab81;
-          color: white;
-          font-size: 1.25rem;
-          padding: 0.5rem 0.25rem;
-          border: none;
-        }
-        textarea {
-          vertical-align: top; /*需求字 移上去*/
-        }
-      }
+    section.form {
+        flex: 1 1 600px;
+        form {
+            min-height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 20px;
+            div {
+                margin: 0.5rem;
+                width: 80%;
+                label {
+                    font-size: 1.5rem;
+                    margin-right: 1rem;
+                }
+                input,
+                textarea {
+                    width: 80%;
+                    background-color: #f5ab81;
+                    color: white;
+                    font-size: 1.25rem;
+                    padding: 0.5rem 0.25rem;
+                    border: none;
+                }
+                textarea {
+                    vertical-align: top; /*需求字 移上去*/
+                }
+            }
 
-      button {
-        align-self: center;
-        background-color: #e08958;
-        color: white;
-        border: none;
-        cursor: pointer;
-        padding: 0.75rem 1.5rem;
-        font-size: 2rem;
-        border-radius: 10px;
-      }
+            button {
+                align-self: center;
+                background-color: #e08958;
+                color: white;
+                border: none;
+                cursor: pointer;
+                padding: 0.75rem 1.5rem;
+                font-size: 2rem;
+                border-radius: 10px;
+            }
+        }
     }
-  }
-  section.contact {
-    flex: 1 1 500px;
-    div.contact {
-      height: 60%;
-      width: 60%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      h1{
-        font-size: 2rem;
-        text-align: center;
-      }
-      h2{
-        border-bottom: 2px solid;
-      }
+    section.contact {
+        flex: 1 1 500px;
+        div.contact {
+            height: 60%;
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            h1 {
+                font-size: 2rem;
+                text-align: center;
+            }
+            h2 {
+                border-bottom: 2px solid;
+            }
+        }
     }
-  }
 }
 
 footer.index,
 footer.resume {
-  opacity: 0.6;
-  position: fixed;
-  bottom: 0;
-  transform: scale(0.8);
-  a {
-    padding: 1rem;
-  }
+    opacity: 0.6;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    transform: scale(0.8);
+    a {
+        padding: 1rem;
+        &:hover {
+            filter: brightness(1.2);
+        }
+    }
 }
 
-footer.contact{
-  opacity: 0.6;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  transform: scale(0.8);
-  a {
-    padding: 1rem;
-  }
+footer.contact {
+    opacity: 0.6;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    transform: scale(0.8);
+    a {
+        padding: 1rem;
+        &:hover {
+            filter: brightness(1.2);
+        }
+    }
 }
 
 .active {
-  color: #e08958;
-  border-bottom: 3px solid #e08958;
+    color: #e08958;
+    border-bottom: 3px solid #e08958;
 }
 
 @media screen and (max-width: 1100px) {
-  /*section.left&right 500px + 600px = 1100px*/
-  .orange {
-    display: none;
-  }
-
-  header {
-    nav {
-      ul {
-        flex-direction: column;
-        width: 100%; /*因原本設定為70%，螢幕縮小後不好看*/
-        li {
-          padding: 1rem 0rem;
-          border-bottom: 2px solid gray;
-        }
-      }
-    }
-  }
-  main {
-    section.left{
-      width: 100%;
-    }
-    section.right {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 1rem;
-      img {
-        position: static;
-        transform: none;
-        width: 50vw;
-        height: 62vw;
-      }
-    }
-    section.picture {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      img {
-        width: 60vw;
-      }
-      div.orangeRect {
+    /*section.left&right 500px + 600px = 1100px*/
+    .orange {
         display: none;
-      }
-    }
-    section.form{
-      form{
-        div{  
-          width: 90%;
-          label{
-            text-align: center;
-          }
-        }
-        button{
-          transform: scale(0.75);
-        }
-      }
     }
 
-    section.contact {
-      div.contact {
-        width: 100%;
+    header {
+        nav {
+            ul {
+                flex-direction: column;
+                width: 100%; /*因原本設定為70%，螢幕縮小後不好看*/
+                li {
+                    padding: 1rem 0rem;
+                    border-bottom: 2px solid gray;
+                }
+            }
+        }
+    }
+    main {
+        section.left {
+            width: 100%;
+        }
+        section.right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 1rem;
+            img {
+                position: static;
+                transform: none;
+                width: 50vw;
+                height: 62vw;
+            }
+        }
+        section.picture {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 60vw;
+            }
+            div.orangeRect {
+                display: none;
+            }
+        }
+        section.form {
+            form {
+                div {
+                    width: 90%;
+                    label {
+                        text-align: center;
+                    }
+                }
+                button {
+                    transform: scale(0.75);
+                }
+            }
+        }
+
+        section.contact {
+            div.contact {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                margin-top: 5rem;
+                h1 {
+                    font-size: 2.5rem;
+                    text-align: center;
+                }
+                h2 {
+                    border-bottom: 2px solid;
+                }
+            }
+        }
+    }
+
+    footer.index,
+    footer.resume,
+    footer.contact {
+        opacity: 1;
+        position: static;
+        transform: scale(0.75);
         display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        margin-top: 5rem;
-        h1{
-          font-size: 2.5rem;
-          text-align: center;
+        justify-content: center;
+        a {
+            padding: 0rem;
         }
-        h2{
-          border-bottom: 2px solid;
-        }
-      }
     }
-  }
-
-  footer.index,
-  footer.resume,
-  footer.contact{
-    opacity: 1;
-    position: static;
-    transform: scale(0.75);
-    display: flex;
-    justify-content: center;
-    a{
-      padding: 0rem;
+    .active {
+        border-bottom: none;
     }
-  }
-  .active{
-    border-bottom: none;
-  }
-}
-
-@keyframes scaleUp {
-  form{
-    transform: scale(0);
-  }
-  to{
-    transform: scale(1);
-  }
 }
