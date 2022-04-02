@@ -5,23 +5,31 @@
     font-family: "Noto Sans TC", sans-serif;
 }
 
+body.index {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
 body {
     position: relative;
 }
 
 .orange {
-    position: absolute;
+    height: 150vh;
+    width: 55vw;
     top: -15vh;
     right: -5vw;
+    position: absolute;
     z-index: -1;
-    width: 55vw;
-    height: 150vh;
+    filter: grayscale(1);
 }
 
 header {
     nav {
+        height: 15%;
         width: 100%;
-        background-color: #ffd2b8;
+        background-color: #7ea098;
         ul {
             padding: 2rem;
             width: 90%;
@@ -31,12 +39,13 @@ header {
             li {
                 font-size: 1.75rem;
                 a {
-                    color: black;
+                    color: rgba(0, 0, 0, 0.8);
                     text-decoration: none;
                 }
                 & :hover {
-                    color: #e08958;
-                    border-bottom: 3px solid #e08958;
+                    color: #fff9ec;
+                    margin: 0rem 1rem;
+                    transition: all 0.8s ease;
                 }
             }
         }
@@ -51,7 +60,7 @@ main {
         padding: 3rem;
         h1 {
             font-size: 4rem;
-            color: #e08958;
+            color: #2f4858e3;
         }
         p {
             font-size: 1.5rem;
@@ -73,7 +82,7 @@ main {
     }
 
     section.table {
-        flex: 3 1 500px;
+        flex: 3 1 700px;
         padding: 2rem;
         table {
             border-collapse: collapse; /*底線*/
@@ -84,7 +93,7 @@ main {
                     padding: 1rem;
                 }
                 &:hover {
-                    background-color: #ffd2b8;
+                    background-color: #eedebb;
                 }
             }
         }
@@ -92,17 +101,19 @@ main {
     section.picture {
         flex: 1 1 600px;
         position: relative;
-        margin-top: 20px;
+        margin: 2.2rem;
+        padding-left: 2rem;
         img {
-            width: 30vw;
+            height: 80vh;
+            width: 29vw;
         }
         div.orangeRect {
-            width: 30vw;
-            height: 90vh;
-            background-color: #e08958;
+            height: 80vh;
+            width: 29vw;
+            background-color: #baaa87;
             position: absolute;
-            top: 25px;
-            left: 85px;
+            top: 35px;
+            left: 90px;
             z-index: -1;
         }
     }
@@ -125,7 +136,7 @@ main {
                 input,
                 textarea {
                     width: 80%;
-                    background-color: #f5ab81;
+                    background-color: #d2c4a4;
                     color: white;
                     font-size: 1.25rem;
                     padding: 0.5rem 0.25rem;
@@ -138,7 +149,7 @@ main {
 
             button {
                 align-self: center;
-                background-color: #e08958;
+                background-color: #9a8f77;
                 color: white;
                 border: none;
                 cursor: pointer;
@@ -169,36 +180,41 @@ main {
 
 footer.index,
 footer.resume {
-    opacity: 0.6;
+    opacity: 0.5;
     position: fixed;
     bottom: 0;
     left: 0;
+    filter: brightness(0.5);
     transform: scale(0.8);
     a {
         padding: 1rem;
         &:hover {
             filter: brightness(1.2);
+            margin: 0rem 1rem;
+            transition: all 0.8s ease;
         }
     }
 }
 
 footer.contact {
-    opacity: 0.6;
+    opacity: 0.5;
     position: fixed;
     bottom: 0;
     right: 0;
+    filter: brightness(0.5);
     transform: scale(0.8);
     a {
         padding: 1rem;
         &:hover {
             filter: brightness(1.2);
+            margin: 0rem 1rem;
+            transition: all 0.8s ease;
         }
     }
 }
 
 .active {
-    color: #e08958;
-    border-bottom: 3px solid #e08958;
+    color: #fff9ec;
 }
 
 @media screen and (max-width: 1100px) {

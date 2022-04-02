@@ -7,22 +7,31 @@
   font-family: "Noto Sans TC", sans-serif;
 }
 
+body.index {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
 body {
   position: relative;
 }
 
 .orange {
-  position: absolute;
+  height: 150vh;
+  width: 55vw;
   top: -15vh;
   right: -5vw;
+  position: absolute;
   z-index: -1;
-  width: 55vw;
-  height: 150vh;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
 }
 
 header nav {
+  height: 15%;
   width: 100%;
-  background-color: #ffd2b8;
+  background-color: #7ea098;
 }
 
 header nav ul {
@@ -41,13 +50,15 @@ header nav ul li {
 }
 
 header nav ul li a {
-  color: black;
+  color: rgba(0, 0, 0, 0.8);
   text-decoration: none;
 }
 
 header nav ul li :hover {
-  color: #e08958;
-  border-bottom: 3px solid #e08958;
+  color: #fff9ec;
+  margin: 0rem 1rem;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
 }
 
 main {
@@ -65,7 +76,7 @@ main section.left {
 
 main section.left h1 {
   font-size: 4rem;
-  color: #e08958;
+  color: #2f4858e3;
 }
 
 main section.left p {
@@ -93,8 +104,8 @@ main section.right img {
 
 main section.table {
   -webkit-box-flex: 3;
-      -ms-flex: 3 1 500px;
-          flex: 3 1 500px;
+      -ms-flex: 3 1 700px;
+          flex: 3 1 700px;
   padding: 2rem;
 }
 
@@ -115,7 +126,7 @@ main section.table table tr td {
 }
 
 main section.table table tr:hover {
-  background-color: #ffd2b8;
+  background-color: #eedebb;
 }
 
 main section.picture {
@@ -123,20 +134,22 @@ main section.picture {
       -ms-flex: 1 1 600px;
           flex: 1 1 600px;
   position: relative;
-  margin-top: 20px;
+  margin: 2.2rem;
+  padding-left: 2rem;
 }
 
 main section.picture img {
-  width: 30vw;
+  height: 80vh;
+  width: 29vw;
 }
 
 main section.picture div.orangeRect {
-  width: 30vw;
-  height: 90vh;
-  background-color: #e08958;
+  height: 80vh;
+  width: 29vw;
+  background-color: #baaa87;
   position: absolute;
-  top: 25px;
-  left: 85px;
+  top: 35px;
+  left: 90px;
   z-index: -1;
 }
 
@@ -176,7 +189,7 @@ main section.form form div label {
 main section.form form div input,
 main section.form form div textarea {
   width: 80%;
-  background-color: #f5ab81;
+  background-color: #d2c4a4;
   color: white;
   font-size: 1.25rem;
   padding: 0.5rem 0.25rem;
@@ -192,7 +205,7 @@ main section.form form button {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  background-color: #e08958;
+  background-color: #9a8f77;
   color: white;
   border: none;
   cursor: pointer;
@@ -232,10 +245,12 @@ main section.contact div.contact h2 {
 
 footer.index,
 footer.resume {
-  opacity: 0.6;
+  opacity: 0.5;
   position: fixed;
   bottom: 0;
   left: 0;
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
 }
@@ -249,13 +264,18 @@ footer.index a:hover,
 footer.resume a:hover {
   -webkit-filter: brightness(1.2);
           filter: brightness(1.2);
+  margin: 0rem 1rem;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
 }
 
 footer.contact {
-  opacity: 0.6;
+  opacity: 0.5;
   position: fixed;
   bottom: 0;
   right: 0;
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
 }
@@ -267,11 +287,13 @@ footer.contact a {
 footer.contact a:hover {
   -webkit-filter: brightness(1.2);
           filter: brightness(1.2);
+  margin: 0rem 1rem;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
 }
 
 .active {
-  color: #e08958;
-  border-bottom: 3px solid #e08958;
+  color: #fff9ec;
 }
 
 @media screen and (max-width: 1100px) {
