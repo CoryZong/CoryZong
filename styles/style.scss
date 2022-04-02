@@ -179,23 +179,7 @@ main {
 }
 
 footer.index,
-footer.resume {
-    opacity: 0.5;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    filter: brightness(0.5);
-    transform: scale(0.8);
-    a {
-        padding: 1rem;
-        &:hover {
-            filter: brightness(1.2);
-            margin: 0rem 1rem;
-            transition: all 0.8s ease;
-        }
-    }
-}
-
+footer.resume,
 footer.contact {
     opacity: 0.5;
     position: fixed;

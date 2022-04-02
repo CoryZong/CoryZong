@@ -244,31 +244,7 @@ main section.contact div.contact h2 {
 }
 
 footer.index,
-footer.resume {
-  opacity: 0.5;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  -webkit-filter: brightness(0.5);
-          filter: brightness(0.5);
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
-}
-
-footer.index a,
-footer.resume a {
-  padding: 1rem;
-}
-
-footer.index a:hover,
-footer.resume a:hover {
-  -webkit-filter: brightness(1.2);
-          filter: brightness(1.2);
-  margin: 0rem 1rem;
-  -webkit-transition: all 0.8s ease;
-  transition: all 0.8s ease;
-}
-
+footer.resume,
 footer.contact {
   opacity: 0.5;
   position: fixed;
@@ -280,10 +256,14 @@ footer.contact {
           transform: scale(0.8);
 }
 
+footer.index a,
+footer.resume a,
 footer.contact a {
   padding: 1rem;
 }
 
+footer.index a:hover,
+footer.resume a:hover,
 footer.contact a:hover {
   -webkit-filter: brightness(1.2);
           filter: brightness(1.2);
