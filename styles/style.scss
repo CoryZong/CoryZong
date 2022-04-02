@@ -219,6 +219,10 @@ footer.contact {
 
 @media screen and (max-width: 1100px) {
     /*section.left&right 500px + 600px = 1100px*/
+    body.index {
+        overflow: visible;
+    }
+
     .orange {
         display: none;
     }
@@ -248,7 +252,7 @@ footer.contact {
                 position: static;
                 transform: none;
                 width: 50vw;
-                height: 62vw;
+                height: 65vw;
             }
         }
         section.picture {
@@ -256,6 +260,7 @@ footer.contact {
             justify-content: center;
             align-items: center;
             img {
+                height: 40vh;
                 width: 60vw;
             }
             div.orangeRect {
@@ -302,6 +307,7 @@ footer.contact {
         transform: scale(0.75);
         display: flex;
         justify-content: center;
+
         a {
             padding: 0rem;
         }
