@@ -9,9 +9,6 @@ body.index {
     height: 100%;
     width: 100%;
     overflow: hidden;
-}
-
-body {
     position: relative;
 }
 
@@ -31,11 +28,11 @@ header {
         width: 100%;
         background-color: #7ea098;
         ul {
-            padding: 2rem;
             width: 90%;
+            padding: 2rem;
             display: flex;
-            list-style-type: none;
             justify-content: space-around;
+            list-style-type: none;
             li {
                 font-size: 1.75rem;
                 a {
@@ -63,20 +60,20 @@ main {
             color: #2f4858e3;
         }
         p {
-            font-size: 1.5rem;
             padding: 1rem 1rem;
+            font-size: 1.5rem;
         }
     }
     section.right {
         flex: 1 1 600px;
         position: relative;
         img {
-            border-radius: 50%;
-            width: 22vw;
             height: 26vw;
-            position: absolute;
+            width: 22vw;
             top: 50vh;
             right: 20vw;
+            position: absolute;
+            border-radius: 50%;
             transform: translateY(-55%);
         }
     }
@@ -85,9 +82,9 @@ main {
         flex: 3 1 700px;
         padding: 2rem;
         table {
-            border-collapse: collapse; /*底線*/
+            border-collapse: collapse;
             tr {
-                border-bottom: 2px solid gray; /*底線*/
+                border-bottom: 2px solid gray;
                 transition: all 0.2 ease;
                 td {
                     padding: 1rem;
@@ -95,6 +92,11 @@ main {
                         &:hover {
                             margin-left: 1rem;
                             transition: all 1s ease;
+                        }
+                    }
+                    ul {
+                        li {
+                            list-style-type: none;
                         }
                     }
                 }
@@ -106,9 +108,9 @@ main {
     }
     section.picture {
         flex: 1 1 600px;
-        position: relative;
-        margin: 2.2rem;
         padding-left: 2rem;
+        margin: 2.2rem;
+        position: relative;
         img {
             height: 80vh;
             width: 29vw;
@@ -116,10 +118,10 @@ main {
         div.orangeRect {
             height: 80vh;
             width: 29vw;
-            background-color: #baaa87;
             position: absolute;
             top: 35px;
             left: 90px;
+            background-color: #baaa87;
             z-index: -1;
         }
     }
@@ -127,14 +129,14 @@ main {
         flex: 1 1 600px;
         form {
             min-height: 70vh;
+            margin-top: 20px;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
-            margin-top: 20px;
             div {
-                margin: 0.5rem;
                 width: 80%;
+                margin: 0.5rem;
                 label {
                     font-size: 1.5rem;
                     margin-right: 1rem;
@@ -234,15 +236,15 @@ footer.contact {
             width: 100%;
         }
         section.right {
+            margin: 1rem;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: 1rem;
             img {
+                height: 65vw;
+                width: 50vw;
                 position: static;
                 transform: none;
-                width: 50vw;
-                height: 65vw;
             }
         }
         section.picture {
@@ -274,10 +276,10 @@ footer.contact {
         section.contact {
             div.contact {
                 width: 100%;
+                margin-top: 5rem;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-around;
-                margin-top: 5rem;
                 h1 {
                     font-size: 2.5rem;
                     text-align: center;
@@ -292,12 +294,11 @@ footer.contact {
     footer.index,
     footer.resume,
     footer.contact {
-        opacity: 1;
-        position: static;
-        transform: scale(0.75);
         display: flex;
         justify-content: center;
-
+        position: static;
+        transform: scale(0.75);
+        opacity: 1;
         a {
             padding: 0rem;
         }

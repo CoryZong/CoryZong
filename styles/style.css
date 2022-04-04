@@ -11,9 +11,6 @@ body.index {
   height: 100%;
   width: 100%;
   overflow: hidden;
-}
-
-body {
   position: relative;
 }
 
@@ -35,14 +32,14 @@ header nav {
 }
 
 header nav ul {
-  padding: 2rem;
   width: 90%;
+  padding: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  list-style-type: none;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  list-style-type: none;
 }
 
 header nav ul li {
@@ -80,8 +77,8 @@ main section.left h1 {
 }
 
 main section.left p {
-  font-size: 1.5rem;
   padding: 1rem 1rem;
+  font-size: 1.5rem;
 }
 
 main section.right {
@@ -92,12 +89,12 @@ main section.right {
 }
 
 main section.right img {
-  border-radius: 50%;
-  width: 22vw;
   height: 26vw;
-  position: absolute;
+  width: 22vw;
   top: 50vh;
   right: 20vw;
+  position: absolute;
+  border-radius: 50%;
   -webkit-transform: translateY(-55%);
           transform: translateY(-55%);
 }
@@ -111,12 +108,10 @@ main section.table {
 
 main section.table table {
   border-collapse: collapse;
-  /*底線*/
 }
 
 main section.table table tr {
   border-bottom: 2px solid gray;
-  /*底線*/
   -webkit-transition: all 0.2 ease;
   transition: all 0.2 ease;
 }
@@ -131,6 +126,10 @@ main section.table table tr td a:hover {
   transition: all 1s ease;
 }
 
+main section.table table tr td ul li {
+  list-style-type: none;
+}
+
 main section.table table tr:hover {
   background-color: #eedebb;
 }
@@ -139,9 +138,9 @@ main section.picture {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 600px;
           flex: 1 1 600px;
-  position: relative;
-  margin: 2.2rem;
   padding-left: 2rem;
+  margin: 2.2rem;
+  position: relative;
 }
 
 main section.picture img {
@@ -152,10 +151,10 @@ main section.picture img {
 main section.picture div.orangeRect {
   height: 80vh;
   width: 29vw;
-  background-color: #baaa87;
   position: absolute;
   top: 35px;
   left: 90px;
+  background-color: #baaa87;
   z-index: -1;
 }
 
@@ -167,6 +166,7 @@ main section.form {
 
 main section.form form {
   min-height: 70vh;
+  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -179,12 +179,11 @@ main section.form form {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 20px;
 }
 
 main section.form form div {
-  margin: 0.5rem;
   width: 80%;
+  margin: 0.5rem;
 }
 
 main section.form form div label {
@@ -306,6 +305,7 @@ footer.contact a:hover {
     width: 100%;
   }
   main section.right {
+    margin: 1rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -315,14 +315,13 @@ footer.contact a:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 1rem;
   }
   main section.right img {
+    height: 65vw;
+    width: 50vw;
     position: static;
     -webkit-transform: none;
             transform: none;
-    width: 50vw;
-    height: 65vw;
   }
   main section.picture {
     display: -webkit-box;
@@ -354,6 +353,7 @@ footer.contact a:hover {
   }
   main section.contact div.contact {
     width: 100%;
+    margin-top: 5rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -363,7 +363,6 @@ footer.contact a:hover {
             flex-direction: column;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    margin-top: 5rem;
   }
   main section.contact div.contact h1 {
     font-size: 2.5rem;
@@ -375,16 +374,16 @@ footer.contact a:hover {
   footer.index,
   footer.resume,
   footer.contact {
-    opacity: 1;
-    position: static;
-    -webkit-transform: scale(0.75);
-            transform: scale(0.75);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    position: static;
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+    opacity: 1;
   }
   footer.index a,
   footer.resume a,
