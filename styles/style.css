@@ -125,6 +125,12 @@ main section.table table tr td {
   padding: 1rem;
 }
 
+main section.table table tr td a:hover {
+  margin-left: 1rem;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
 main section.table table tr:hover {
   background-color: #eedebb;
 }

@@ -91,6 +91,12 @@ main {
                 transition: all 0.2 ease;
                 td {
                     padding: 1rem;
+                    a {
+                        &:hover {
+                            margin-left: 1rem;
+                            transition: all 1s ease;
+                        }
+                    }
                 }
                 &:hover {
                     background-color: #eedebb;
