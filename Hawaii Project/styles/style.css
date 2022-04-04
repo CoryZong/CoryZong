@@ -73,6 +73,12 @@ header nav ul li a {
   font-size: 1.35rem;
 }
 
+header nav ul li a:hover {
+  margin: 1rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
 main section.backImage {
   min-height: 90vh;
   width: 100%;
