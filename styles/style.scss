@@ -186,15 +186,18 @@ main {
     }
 }
 
-footer.index,
-footer.resume,
-footer.contact {
+footer.index {
+    animation: flutter alternate 1s ease;
+    animation-iteration-count: 2;
+}
+
+footer {
     opacity: 0.5;
     position: fixed;
     bottom: 0;
     right: 0;
-    filter: brightness(0.5);
     transform: scale(0.8);
+    filter: brightness(0.5);
     a {
         padding: 1rem;
         &:hover {
@@ -305,5 +308,14 @@ footer.contact {
     }
     .active {
         border-bottom: none;
+    }
+}
+
+@keyframes flutter {
+    from {
+        transform: scale(0.8);
+    }
+    to {
+        transform: scale(1);
     }
 }
