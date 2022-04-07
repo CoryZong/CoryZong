@@ -186,23 +186,27 @@ main {
     }
 }
 
-footer.index {
-    animation: flutter alternate 1s ease;
-    animation-iteration-count: 2;
-}
+// footer.index {
+//     animation: flutter alternate 1s ease;
+//     animation-iteration-count: 2;
+// }
 
 footer {
-    opacity: 0.5;
+    opacity: 0.6;
     position: fixed;
     bottom: 0;
     right: 0;
+    filter: brightness(0.6);
     transform: scale(0.8);
-    filter: brightness(0.5);
     a {
         padding: 1rem;
         &:hover {
+            filter: brightness(1.2);
             margin: 0rem 1rem;
             transition: all 0.8s ease;
+        }
+        img {
+            animation: wiggle 2.5s 2;
         }
     }
 }
@@ -310,11 +314,29 @@ footer {
     }
 }
 
-@keyframes flutter {
-    from {
-        transform: scale(0.8);
+// @keyframes flutter {
+//     from {
+//         transform: scale(0.8);
+//     }
+//     to {
+//         transform: scale(1);
+//     }
+// }
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(0deg);
     }
-    to {
-        transform: scale(1);
+    80% {
+        transform: rotate(0deg);
+    }
+    85% {
+        transform: rotate(-10deg);
+    }
+    95% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(0deg);
     }
 }
