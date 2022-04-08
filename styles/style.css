@@ -272,8 +272,8 @@ footer a:hover {
 }
 
 footer a img {
-  -webkit-animation: wiggle 2.5s 2;
-          animation: wiggle 2.5s 2;
+  -webkit-animation: wiggle 2.5s 5s 2;
+          animation: wiggle 2.5s 5s 2;
 }
 
 .active {
