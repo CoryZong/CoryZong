@@ -34,10 +34,12 @@ header {
             justify-content: space-around;
             list-style-type: none;
             li {
-                font-size: 1.75rem;
                 a {
-                    color: rgba(0, 0, 0, 0.8);
+                    color: rgba(0, 0, 0, 0.7);
                     text-decoration: none;
+                    font-size: 1.8rem;
+                    font-weight: bold;
+                    font-family: "NSimSun", "Noto Sans TC";
                 }
                 & :hover {
                     color: #fff9ec;
